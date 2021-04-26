@@ -1,117 +1,121 @@
-*{
-    box-sizing: border-box;
+ *{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 }
 
 header h1{
-    font-family: 'Inconsolata', monospace;
-    font-style: normal;
+    font-family: 'Inconsolata', monospace;  
     font-weight: bold;
-   
     font-size: 24px;
-    line-height: 25px;
+    padding-bottom: 20px ;
+    margin: 20px;
     letter-spacing: -0.08em;
     text-transform: uppercase;
     color:#333333;
-    position: absolute;
-    width: 133px;
-    height: 25px;
-    left: 77px;
-    top: 40px;
+    position: relative;    
+    left: 20px;
+    top: 20px;
+        
 }
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
 .container img{
-    max-width:539.22px;
+    width:100%;
+    max-width: 450px;
     height: auto;
-    position: absolute;
-    left: 5.35%;
-    right: 57.21%;
-    top: 325px;
-    bottom: 34.03%;
+    position: relative;
+    left: 0;
+    top: 0;   
 }
-.title{
-    /* I have bad news for you */
-
-
-position: absolute;
-width: 586px;
-height: 190px;
-left: 735px;
-top: 265px;
-
-font-family: Space Mono;
-font-style: normal;
-font-weight: bold;
-font-size: 64px;
-line-height: 95px;
-letter-spacing: -0.035em;
-
-/* Gray 1 */
-
-color: #333333;
-}
-.text{
-    /* The page you are looking for might be removed or is temporarily unavailable */
-
-
-    position: absolute;
-    width: 381px;
-    height: 108px;
-    left: 736px;
-    top: 491px;
-    
+.title{ 
+    position: relative;     
     font-family: Space Mono;
-    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+  
+    }
+
+.text{
+    
+    position: relative;           
+    font-family: Space Mono;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
+    letter-spacing: -0.035em;    
+    color: #4F4F4F;    
+    }
+
+.button{   
+    display: block;
+    position: relative;
+    width: 216px;
+    height: 68px;
+    font-family: Space Mono;   
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
     letter-spacing: -0.035em;
-    
-    /* Gray 2 */
-    
-    color: #4F4F4F;
-
-}
-.button{
-    /* Back to homepage */
-
-display: block;
-position: absolute;
-width: 216px;
-height: 68px;
-left: 740px;
-top: 663px;
-
-font-family: Space Mono;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 21px;
-letter-spacing: -0.035em;
-text-transform: uppercase;
-background-color:#333333;
-text-decoration: none;
-text-align: center;
-color: #ffffff;
-padding-top: 22px;
-}
+    text-transform: uppercase;
+    background-color:#333333;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 22px;
+    }
 .button:hover{
     background-color: #4F4F4F;
 }
 
-.username{
-    position: absolute;
-    width: 287px;
-    height: 17px;
-    left: 577px;
-    top: 1039px;
+.footer {
+    position:relative; 
+    width: 100vw;    
+    left: 0;
+    bottom: 0;   
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #BDBDBD;
+    color: #9b9999;
 }
 
+@media (max-width:814px){
+    .container{
+        flex-direction: column;
+    }
+@media (max-width:576px){    
+    .title{       
+        font-size: 48px;
+    }
+    .text{
+        font-size:18px;
+    }
+    .button{
+        width: 150px;
+        height: 45px;
+        font-size: 14px;
+        padding-top: 13px;
+    }
+   
+}
 
 
 
